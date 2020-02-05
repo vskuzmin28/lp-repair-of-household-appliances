@@ -1,0 +1,167 @@
+// fonts & variables
+
+@import '../styles/helpers/variables.less';
+@import '../styles/helpers/sprite.less';
+
+// SETTINGS //
+
+a {
+  cursor: pointer;
+  color: @black;
+  font-weight: 400;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+    opacity: 1;
+  }
+
+}
+
+// animation
+
+.button, .button_shadow, input, .specialists__block, nav {
+	transition: all 0.3s;
+}
+
+a, input, textarea {
+  outline: none;
+}
+
+// body
+
+body {
+
+  margin: 0;
+  background: @white;
+	cursor: default;
+  overflow-x: hidden;
+}
+
+// selection
+
+body *::-moz-selection {
+  background: @orange;
+  color: @white;
+}
+
+body *::-webkit-selection {
+  background: @orange;
+  color: @white;
+}
+
+body *::selection {
+  background: @orange;
+  color: @white;
+}
+
+.burger {
+  z-index: 40;
+  position: absolute;
+  top: 9px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+  border: 2px solid @orange;
+  border-radius: 4px;
+
+  @media screen and (min-width: 1000px) {
+    display: none;
+}
+
+  span {
+    transition: ease-out 0.5s;
+    margin-bottom: 2px;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: @orange;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &.active {
+
+    span {
+
+      &:first-child {
+        position: absolute;
+        margin-top: 0px;
+        transform: rotate(45deg);
+      }
+
+      &:last-child {
+        position: absolute;
+        margin-top: 0px;
+        transform: rotate(-45deg);
+      }
+
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .wow{
+      animation-name: none !important;
+      visibility: visible !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h3 {
+    font-size: 24px !important;
+  }
+}
+
+@media screen and (max-width: 969px) {
+  h3 {
+    font-size: 26px !important;
+  }
+}
+
+@media all and (-ms-high-contrast:none) {
+     *::-ms-backdrop, .main__order-block {
+      display: block !important;
+      width: 500px !important;
+     } 
+
+     *::-ms-backdrop, .repair__order-block {
+      display: block !important;
+      width: 96% !important;
+     }
+
+     *::-ms-backdrop, .repair__order-box {
+       margin: 30px 110px 0 0 !important;
+      width: 350px !important;
+      float: right !important;
+      
+     }
+
+     *::-ms-backdrop, .main__order-box {
+      width: 350px !important;
+      margin-left: 80px !important;
+     }
+
+     *::-ms-backdrop, .logo__desc {
+      width: 150px !important;
+     }
+
+
+     *::-ms-backdrop, .logo__desc {
+      margin-top: -10px !important;
+     }
+
+}

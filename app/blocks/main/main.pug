@@ -1,0 +1,42 @@
+mixin main(data)
+    - data = data || {};
+    section.main(class = data.class role = data.role)
+        .container
+            .row
+                .col-lg-4
+                    h3.main__title Отремонитруем вашу технику уже сегодня!
+                    p.main__desc 90% неисправностей устраним в день обращения
+
+                    ul.main__list
+                        li.main__list-item
+                            svg.main__list-icon
+                                use(xlink:href="../img/sprite/sprite.svg#guarantee")
+                            | Гарантия сервисного центра до 3 лет
+                        li.main__list-item
+                            svg.main__list-icon
+                                use(xlink:href="../img/sprite/sprite.svg#user")
+                            | Выезд мастера в любую точку города
+                        li.main__list-item
+                            svg.main__list-icon
+                                use(xlink:href="../img/sprite/sprite.svg#settings")
+                            | Только оригинальные запчасти
+
+                    .main__order
+                        .main__order-block
+                            .row
+                                .col-lg-4
+                                    .main__order-box
+                                        h4.main__order-title Получите бесплатную консультацию по вашей неисправности
+                                        p.main__order-desc Наша техподдержка работает 24/7
+
+                                        .main__form
+                                            form.form(action="/" method="post")
+                                                input.form__input(name="phone" type="text" placeholder="Ваш телефон" required)
+                                                input.input-hidden(type="hidden" name='name' value='Бесплатная консультация')
+                                                input.button.button_orange.button_shadow.form__button.main__button(type="submit" value="Получить")
+                                .col-lg-8
+                .col-lg-8
+                    .main__kitchen
+                        img.main__kitchen-icebox.wow.fadeInRight(src="../img/icebox.png" alt="@@" data-wow-delay="0s")
+                        img.main__kitchen-master.wow.fadeIn(src="../img/kitchen-master.png" alt="@@" data-wow-delay="0.5s")
+                        img.main__kitchen-bg(src="../img/kitchen.jpg" alt="@@")

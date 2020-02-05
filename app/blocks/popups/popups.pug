@@ -1,0 +1,22 @@
+mixin popup(data)
+    - data = data || {};
+    section.popup(class = data.class, role = data.role)
+        h2.popup__title Есть вопросы? <br/>Свяжитесь с нами, мы Вам перезвоним!
+        a.popup__close(href="#" title="")
+            svg.popup__icon
+                use(xlink:href="../img/sprite/sprite.svg#close")
+        form.form.send-form.popup__form(action='/' method='post')
+            input.form__input(type="text" name='name' placeholder='Ваше имя' required)
+            input.form__input.phone-mask(type="text" name='phone' placeholder='Ваш телефон' required)
+            input.input-hidden(type="hidden" name='name' value='')
+            input.form__button.button.button_yellow.button_shadow-light(type='submit' value='Связаться с нами')
+
+
+mixin popupThanks(data)
+    - data = data || {};
+    section.popup.popupThanks(class = data.class, role = data.role)
+        h2.popup__title Спасибо! <br/> Мы перезвоним Вам за 5 минут!
+        a.popup__close(href="#" title="")
+            svg.popup__icon
+                use(xlink:href="../img/sprite/sprite.svg#close")
+        a.popup__link.button.button_yellow.button_shadow-light.close(href="#" title="") Хорошо

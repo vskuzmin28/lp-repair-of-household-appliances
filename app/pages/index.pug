@@ -1,0 +1,110 @@
+include ../blocks/head/head
+include ../blocks/header/header
+include ../blocks/main/main
+include ../blocks/repair/repair
+include ../blocks/services/services
+include ../blocks/brands/brands
+include ../blocks/about/about
+include ../blocks/specialists/specialists
+include ../blocks/reviews/reviews
+include ../blocks/questions/questions
+include ../blocks/map/map
+include ../blocks/footer/footer
+include ../blocks/popups/popups
+
+doctype html
+html(lang='ru')
+  +head({
+    title: 'Title',
+    keywords: '',
+    description: ''
+  })
+  body
+ 
+    // BEGIN HEADER
+
+    +header
+
+    // END HEADER
+
+    // BEGIN MAIN
+
+    +main
+
+    // END MAIN
+
+    // BEGIN REPAIR
+
+    +repair
+
+    // END REPAIR
+
+    // BEGIN SERVICES
+
+    +services
+
+    // END SERVICES
+
+    // BEGIN BRANDS
+
+    +brands
+
+    // END BRANDS
+
+    // BEGIN ABOUT
+
+    +about
+
+    // END ABOUT
+
+    // BEGIN SPECIALISTS
+
+    +specialists
+
+    // END SPECIALISTS
+
+    // BEGIN REVIEWS
+
+    +reviews
+
+    // END REVIEWS
+
+    // BEGIN QUESTIONS
+
+    +questions
+
+    // END QUESTIONS
+
+    // BEGIN MAP
+
+    +map
+
+    // END MAP
+
+    +footer
+
+    // END FOOTER
+
+    // BEGIN POPUPS
+
+    +popup({
+      class: 'popupCall',
+    })
+
+    +popupThanks
+
+    // END POPUPS
+
+    // htmlbuild:js 
+
+    script(src='../js/libs/jquery-3.4.1.min.js')
+    script(src='../js/libs/jquery.maskedinput.min.js')
+    script(src='../js/libs/wow.js')
+    script(src="../js/libs/svg4everybody.min.js")
+    script(src='../js/libs/jquery.bpopup.min.js')
+    script(src='../js/libs/swiper.js')
+
+    // endbuild 
+    script(src='../js/scripts.js')
+ 
+    // END SCRIPTS

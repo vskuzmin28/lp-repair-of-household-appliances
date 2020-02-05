@@ -1,0 +1,397 @@
+// header
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.header {
+    position: fixed;
+    z-index: 40;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 100%;
+    height: 118px;
+    background: @white;
+    
+    &__button-call {
+        position: absolute;
+        margin: 74px 0 0 28px;
+        width: 195px;
+        font-size: 14px;
+        font-family: 'Futura PT Demi';
+        text-align: center;
+        text-decoration: none;
+
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+
+        &:hover {
+            color: @orange;
+            text-decoration: none;
+        }
+
+    }
+
+    @media screen and (max-width: 991px) {
+        position: fixed;
+        z-index: 40;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 0 15px;
+        background: @white;
+        height: 70px;
+
+    }
+
+    &__row {
+        position: relative;
+    }
+
+    &_float {
+        animation: smoothScroll 1s forwards;
+        z-index: 40;
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: fixed;
+        height: 52px;
+
+        .header__button-call {
+            display: none;
+        }
+
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+
+        .logo__desc {
+            visibility: hidden;
+
+            @media screen and (max-width: 991px) {
+                visibility: visible;
+            }
+
+        }
+
+        .header__logo {
+            margin-top: 8px;
+
+            @media screen and (max-width: 991px) {
+                margin-top: 8px;
+            }
+
+        }
+
+        .logo__icon {
+            width: 36px;
+            height: 35px;
+
+            @media screen and (max-width: 991px) {
+                margin-top: 8px;
+            }
+
+        }
+
+        .logo__title {
+            margin-left: 23px;
+            margin-top: 8px;
+            font-size: 19px;
+        }
+
+        .header__nav, .header__nav-item {
+            height: 52px;
+        }
+
+        .header__nav-item a, .header__nav-item a:hover {
+
+            &:before, &:after {
+                visibility: hidden;
+            }
+
+        }
+
+        .header__nav-item:hover {
+            background: 0;
+        }
+
+        .header__button {
+            margin-top: 12px;
+            height: 28px !important;
+            border-radius: 4px;
+        }
+
+    }
+
+    &__logo {
+        margin-top: 31px;
+        margin-left: -15px;
+
+        @media screen and (max-width: 475px) {
+            width: 200px;
+        }
+
+        @media screen and (max-width: 991px) {
+            margin: 12px 0 0 -12px;
+            zoom: 0.8;
+            width: 270px;
+        }
+
+    }
+
+    .logo__title, .logo__title {
+        @media screen and (max-width: 475px) {
+            font-size: 11px;
+        }
+        @media screen and (max-width: 991px) {
+            margin-top: 8px;
+        }
+    }
+
+    .logo__desc {
+        @media screen and (max-width: 991px) {
+            font-size: 10px;
+        }
+    }
+
+    .logo__icon {
+
+        @media screen and (max-width: 991px) {
+            margin-top: 2px;
+        }
+
+        @media screen and (max-width: 475px) {
+            width: 90px;
+            margin-right: 20px;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        right: -12px;
+        margin-top: 31px;
+        width: 195px;
+        height: 34px !important;
+        background: #ffd10a !important;
+        color: @black !important;
+
+        @media screen and (max-width: 991px) {
+            right: inherit;
+            position: relative;
+            margin: 30px auto;
+            display: none;
+        }
+        
+    }
+
+    &__nav {
+        height: 118px;
+        transition: ease-out 0.3s;
+
+        @media screen and (max-width: 991px) {
+            height: auto;
+            margin-top: 0;
+        }
+
+        @media screen and (min-width: 998px) and (max-width: 1200px) {
+            margin-left: 70px;
+        }
+
+        &-list {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+
+            @media screen and (max-width: 991px) {
+                height: auto;
+                flex-direction: column;
+            }
+
+        }
+
+        &-item {
+            margin-right: 30px;
+            height: 118px;
+            
+            @media screen and (min-width: 991px) and (max-width: 1200px) {
+                margin-right: 18px;
+            }
+
+            @media screen and (max-width: 991px) {
+                height: 45px;
+                margin: 0;
+            }
+
+            @media screen and (max-width: 991px) {
+                text-align: center;
+            }
+
+            a, a:hover {
+                position: relative;
+                padding: 0 0 0 6px;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                font-size: 13px;
+                font-family: 'Futura PT Demi';
+                text-transform: uppercase;
+                color: @black;
+                text-decoration: none;
+
+                @media screen and (max-width: 991px) {
+                    justify-content: center;
+                    padding: 0;
+                }
+
+                @media screen and (min-width: 1000px) and (max-width: 1200px) {
+                    font-size: 9px;
+                }
+
+                &:before {
+                    visibility: visible;
+                    top: 0px;
+                    left: -34px;
+                    position: absolute;
+                    width: 34px;
+                    height: 118px;
+                    background: url('../img/nav-bef.png') no-repeat;
+                    content: "";
+
+                    @media screen and (max-width: 991px) {
+                        display: none;
+                    }
+
+                }
+
+                &:after {
+                    z-index: -1;
+                    visibility: visible;
+                    top: 0px;
+                    right: -34px;
+                    position: absolute;
+                    width: 34px;
+                    height: 118px;
+                    background: url('../img/nav-af.png') no-repeat right;
+                    content: "";
+
+                    @media screen and (max-width: 991px) {
+                        display: none;
+                    }
+
+                }
+
+            }
+
+            a {
+                color: #bdc4d3;
+
+                &:before, &:after {
+                    visibility: hidden;
+                }
+            }
+
+            &:hover {
+                background: #ffd800;
+
+                @media screen and (max-width: 991px) {
+                    background: 0;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 998px) {
+    .header__nav {
+      display: none;
+    }
+  
+    .header__button {
+      display: none;
+    }
+  
+    .header__nav-active, .header__button-active {
+      display: block;
+    }
+  
+    .header__button-active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
+
+.header__nav-active {
+    margin-top: 0px !important;
+
+    @media screen and (max-width: 991px) {
+        margin-top: 20px !important;
+
+    }
+
+}
+
+
+.header__float {
+    height: auto;
+
+    .header__nav {
+        margin-top: 0px;
+        height: auto;
+    }
+
+}
+
+.header__float-show {
+    
+    @media screen and (max-width: 991px) {
+        height: auto;
+    }
+
+    .header__nav {
+
+        @media screen and (max-width: 991px) {
+            margin-top: 0px;
+            height: auto;
+        }
+        
+    }
+}
+
+.header {
+    .burger {
+        top: 18px;
+        right: 15px;
+    }
+}
+
+.header_float {
+    .burger {
+        top: 9px;
+        right: 15px;
+    }
+    .header__logo {}
+}
+
+.header__nav_height {
+    @media screen and (max-width: 991px) {
+      margin-top: 50px !important; 
+    }
+}
+  

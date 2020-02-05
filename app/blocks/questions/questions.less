@@ -1,0 +1,160 @@
+// questions
+
+.questions {
+    margin-bottom: 42px;
+
+    &__preview {
+        margin-top: -20px;
+        margin-left: 20px;
+
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+
+        @media screen and (max-width: 1340px) {
+            margin-top: 80px;
+            zoom: 0.65;
+        }
+
+        @media screen and (min-width: 1340px) {
+            margin-top: 80px;
+            zoom: 0.80;
+        }
+
+    }
+
+    &__form {
+        margin-top: -2px;
+        margin-left: -2px;
+    }
+
+    &__title {
+        margin: 58px 0 40px -2px;
+        font-family: 'Futura PT';
+        font-size: 32px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: @black;
+
+        @media screen and (max-width: 991px) {
+            margin: 24px 0;
+            height: auto;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 1340px) {
+            margin-top: 48px;
+        }
+
+    }
+
+    &__desc {
+        margin-top: -2px;
+        margin-left: -2px;
+        margin-bottom: 76px;
+        font-family: 'Futura PT Book';
+        font-size: 16px;
+        color: @black;
+
+        @media screen and (max-width: 991px) {
+            margin: 0 0 24px 0;
+            height: auto;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 1340px) {
+            margin: -30px 0 20px 0;
+        }
+
+        span {
+            position: relative;
+            margin-bottom: 20px;
+            display: block;
+            font-family: 'Futura PT';
+            font-weight: 900;
+            color: @black;
+
+            @media screen and (max-width: 1340px) {
+                margin: 0px 0 20px 0;
+            }
+
+            &::before {
+                top: 9px;
+                right: -160px;
+                position: absolute;
+                content: "";
+                width: 198px;
+                height: 2px;
+                background: @black;
+                z-index: 10;
+
+                @media screen and (max-width: 1200px) {
+                    display: none;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__input, &__textarea {
+        border: 1px solid @gray;
+        font-family: 'Futura PT Demi';
+        font-size: 14px;
+        text-align: center;
+        color: @black;
+        outline: none;
+
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: @black;
+            opacity: 1; /* Firefox */
+        }
+          
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: @black;
+        }
+          
+        &::-ms-input-placeholder { /* Microsoft Edge */
+            color: @black;
+        }
+
+    }
+
+    &__input {
+        padding: 0 10px;
+        margin-bottom: 9px;
+        width: 100%;
+        height: 46px;
+    }
+
+    &__textarea {
+        padding: 10px 10px;
+        margin-bottom: 9px;
+        height: 84px;
+        resize: none;
+        
+
+        &::-moz-placeholder { /* Mozilla Firefox 19+ */
+            line-height: 60px;
+        }
+        &::-webkit-input-placeholder { /* Webkit */
+            line-height: 60px;
+        }
+        &:-ms-input-placeholder { /* IE */
+            line-height: 60px;
+        }
+
+    }
+
+    &__button {
+        height: 48px !important;
+    }
+
+}

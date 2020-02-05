@@ -1,0 +1,20 @@
+mixin footer(data)
+    - data = data || {};
+    footer.footer(class = data.class role = data.role)
+        .container.footer__container
+            .row
+                .col-lg-3.col-md-6
+                    a.footer__logo.logo(href="#" title="")
+                        svg.logo__icon
+                            use(xlink:href="../img/sprite/sprite.svg#car")
+                        .logo__content
+                            p.logo__title Company Name
+                            p.logo__desc Выездной сервис по ремонту крупной бытовой техники
+                .col-lg-6.col-md-12
+                    .footer__copyright
+                        p Coopyright © 2019 Все права защищены
+                        p Информация на сайте не является публичной офертой
+                .col-lg-3.col-md-12.d-flex.justify-content-lg-end.justify-content-md-center
+                    .footer__buttons
+                        a.button.button_yellow.linkCall(href="#" title="") Связаться с нами
+                        a.button.button_orange.button_shadow.linkCallThx(href="#" title="") Стать партнером

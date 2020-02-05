@@ -1,0 +1,173 @@
+// specialists
+
+.specialists {
+    padding: 50px 0 56px 0;
+    background: #eff4fb;
+
+    .col-md-4:nth-child(3) {
+
+        @media screen and (max-width: 991px) {
+            margin: 10px auto;
+        }
+        
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 32px;
+        font-family: 'Futura PT';
+        font-weight: 600;
+        text-transform: uppercase;
+        color: @black;
+        text-align: center;
+    }
+
+    &__desc {
+        margin: 0;
+        margin-top: 9px;
+        font-size: 22px;
+        font-family: 'Futura PT Book';
+        font-weight: normal;
+        color: @black;
+        text-align: center;
+    }
+
+    &__body {
+        margin-top: 60px;
+    }
+
+    &__block {
+        position: relative;
+
+        @media screen and (max-width: 991px) {
+            margin-bottom: 20px;
+            width: 50% !important;
+            box-sizing: border-box;
+        }
+
+        &-preview {
+            transition: ease-in-out 0.5s;
+            margin-bottom: 10px;
+            position: relative;
+
+            img {
+                position: relative;
+                display: block;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+
+            .specialists__block-mask {
+                transition: ease-in-out 0.5s;
+                visibility: hidden;
+                opacity: 0;
+                position: absolute;
+                z-index: 10;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0, 0.76);
+                color: @white;
+
+                @media screen and (max-width: 991px) {
+                    visibility: visible;
+                    opacity: 1;
+                    bottom: -60px;
+                    height: 60px;
+                    background: 0 !important;
+                    color: @black !important;
+                }
+
+                .specialists__block-content {
+                    bottom: 20px;
+                    left: 18px;
+                    position: absolute;
+
+                    @media screen and (max-width: 991px) {
+                        left: 0;
+                        bottom: 10px;
+                    }
+
+                    p {
+                        margin: 0;
+                        font-size: 22px;
+                        font-family: 'Futura PT';
+                        font-weight: 500;
+
+                        @media screen and (max-width: 420px) {
+                            font-size: 18px !important;
+                        }
+
+                    }
+    
+                    span {
+                        margin: 0;
+                        font-size: 12px;
+                        font-family: 'Futura PT';
+                        font-weight: 500;
+                    }
+    
+                }
+            }
+
+            &:hover {
+                .specialists__block-mask {
+                    position: absolute;
+                    visibility: visible;
+                    opacity: 1;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0, 0.76);
+                    color: @white;
+       
+                }
+    
+                .specialists__block-content {
+                    bottom: 20px;
+                    left: 18px;
+                    position: absolute;
+    
+                    @media screen and (max-width: 991px) {
+                        left: 0;
+                        bottom: 10px;
+                    }
+
+                    p {
+                        margin: 0;
+                        font-size: 22px;
+                        font-family: 'Futura PT';
+                        font-weight: 500;
+                    }
+    
+                    span {
+                        margin: 0;
+                        font-size: 12px;
+                        font-family: 'Futura PT';
+                        font-weight: 500;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    &__button {
+        width: 100%;
+        height: 42px !important;
+
+        @media screen and (max-width: 991px) {
+            margin-top: 50px;
+
+        }
+
+    }
+
+}
+
+.specialists .col-md-4 {
+    @media screen and (max-width: 991px) {
+        padding: 0 10px !important;
+
+    }
+}

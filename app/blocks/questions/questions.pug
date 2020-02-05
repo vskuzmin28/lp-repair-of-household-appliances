@@ -1,0 +1,17 @@
+mixin questions(data)
+    - data = data || {};
+    section.questions
+        .container.questions__container
+            .row
+                .col-lg-4.col-md-12.col-sm-12
+                    form.questions__form.form(action="/" method="post")
+                        h3.questions__title У Вас остались вопросы?
+                        p.questions__desc
+                            span Мы перезвоним Вам в течение 2 минут 
+                            | и бесплатно проконсультируем по любому возникшему вопросу
+                        
+                        input.form__input(name="phone" type="text" placeholder="Ваш телефон" required)
+                        textarea.form__textarea(name="msg" placeholder="Ваш комментарий" required)
+                        input.button.button_orange.button_shadow.form__button(type="submit" value="Отправить")
+                .col-lg-4.col-md-12.col-sm-12
+                    img.questions__preview(src="../img/questions.jpg" alt="@@")

@@ -1,0 +1,245 @@
+// main
+
+.main {
+    margin-top: 118px;
+    position: relative;
+    background: #eff4fb;
+    height: 865px;
+
+    @media screen and (max-width: 991px) {
+        margin-top: 70px;
+        height: auto;
+    }
+
+
+
+    &__title {
+        z-index: 12;
+        margin-top: 110px;
+        margin-left: -4px;
+        position: absolute;
+        width: 230%;
+        font-size: 48px;
+        text-transform: uppercase;
+        font-family: 'Futura PT';
+        font-weight: 600;
+        color: @black;
+
+        @media screen and (max-width: 991px) {
+            position: relative;
+            margin: 0;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            width: 100%;
+            font-size: 32px;
+        }
+
+    }
+
+    &__desc {
+        position: absolute;
+        margin-left: -4px;
+        margin-top: 236px;
+        width: 120%;
+        font-size: 19px;
+        font-family: 'Futura PT';
+        font-weight: 500;
+        color: @black;
+
+        @media screen and (max-width: 991px) {
+            position: relative;
+            margin: 0;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+    }
+
+    &__list {
+        position: relative;
+        margin: 0;
+        margin-top: 324px;
+        margin-left: -4px;
+        padding: 0;
+        list-style: none;
+
+        @media screen and (max-width: 991px) {
+            margin: 0;
+        }
+
+        &-item {
+            margin-bottom: 26px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 18px;
+            font-family: 'Futura PT';
+            font-weight: 500;
+            color: @black;
+        }
+
+        &-icon {
+            margin-right: 21px;
+            display: block;
+            width: 34px;
+            height: 34px;
+            fill: @orange;
+            //filter: invert(72%) sepia(46%) saturate(5533%) hue-rotate(324deg) brightness(99%) contrast(112%);
+        }
+
+    }
+
+    &__kitchen {
+        margin-left: 42px;
+        position: absolute;
+        width: 498px;
+        padding-bottom: 82px;
+        background: @white;
+
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+
+        &-bg {
+            position: relative;
+        }
+
+        &-icebox {
+            z-index: 10;
+            bottom: 99px;
+            right: -149px;
+            position: absolute;
+        }
+
+        &-master {
+            z-index: 9;
+            bottom: 127px;
+            right: 17px;
+            position: absolute;
+        }
+
+    }
+
+    &__order {
+        bottom: 0;
+        position: relative;
+
+        &-block {
+            position: absolute;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            bottom: -363px;
+            right: -72px;
+            width: 1000%;
+            z-index: 30;
+            display: flex;
+            justify-content: flex-end;
+            background: @white;
+            -webkit-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.08);
+            -moz-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.08);
+            box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.08);
+
+            @media screen and (max-width: 991px) {
+                margin: 0;
+                padding: 0;
+                position: relative;
+                bottom: inherit;
+                right: inherit;
+                width: 100%;
+                background: 0;
+                box-shadow: none;
+            }
+
+            img {
+                display: block;
+                float: right;
+
+                @media screen and (max-width: 991px) {
+                    display: none;
+                }
+
+            }
+        }
+
+        &-box {
+            width: 322.5%;
+            margin-right: 120px;
+
+            @media screen and (max-width: 991px) {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            @media screen and (min-width: 991px) and (max-width: 1200px) {
+                margin-right: 55px;
+                width: 325%;
+            }
+
+        }
+
+        &-title {
+            z-index: 10;
+            position: absolute;
+            margin: 0;
+            margin-top: -44px;
+            font-size: 18px;
+            width: 250%;
+            font-family: 'Futura PT';
+            font-weight: 600;
+            text-transform: uppercase;
+            color: @black;
+            
+            @media screen and (max-width: 991px) {
+                position: relative;
+                margin: 0;
+                width: 100%;
+            }
+
+            @media screen and (min-width: 991px) and (max-width: 1200px) {
+                margin-top: -64px;
+            }
+
+        }
+
+        &-desc {
+            margin-top: 34px;
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-family: 'Futura PT';
+            font-weight: 500;
+            color: @black;
+
+            @media screen and (min-width: 991px) and (max-width: 1200px) {
+                margin-top: 60px;
+            }
+
+            &_orange {
+                z-index: 10;
+                margin-top: 0px;
+                position: absolute;
+                width: 140%;
+                font-size: 18px;
+                font-family: 'Futura PT';
+                font-weight: 500;
+                color: @orange;
+            }
+
+        }
+
+    }
+
+    &__form {
+        margin-bottom: 60px;
+    }
+
+    .main__form {
+        input {
+            z-index: 10;
+        }
+    }
+
+    .main__button {
+        margin-top: 2px;
+    }
+
+}

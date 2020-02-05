@@ -1,0 +1,605 @@
+
+<header class="header">
+  <div class="container">
+    <div class="row header__row">
+      <div class="burger"><span></span><span></span><span></span></div>
+      <div class="col-lg-3 col-md-3"><a class="header__logo logo" href="#" title="">
+          <svg class="icon logo__icon">
+            <use xlink:href="../img/sprite/sprite.svg#car"></use>
+          </svg>
+          <div class="logo__content">
+            <p class="logo__title">Company Name</p>
+            <p class="logo__desc">Выездной сервис по ремонту крупной бытовой техники</p>
+          </div></a></div>
+      <div class="col-lg-6 col-md-12">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#services" title="">Услуги и цены</a></li>
+            <li class="header__nav-item"><a href="#about" title="">О компании</a></li>
+            <li class="header__nav-item"><a href="#masters" title="">Мастера</a></li>
+            <li class="header__nav-item"><a href="#reviews" title="">Отзывы</a></li>
+            <li class="header__nav-item"><a href="#map" title="">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-lg-3 col-md-12 d-flex justify-content-end"><a class="header__button button button_orange button_shadow-light linkCall" href="#" title="">Связаться с нами</a><a class="header__button-call" href="tel:9999999999">8 800 555 3535</a></div>
+    </div>
+  </div>
+</header><!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=320, initial-scale=1"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png"/>
+    <link rel="manifest" href="../img/site.webmanifest"/>
+    <link rel="mask-icon" href="../img/safari-pinned-tab.svg" color="#5bbad5"/>
+    <meta name="msapplication-TileColor" content="#da532c"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <!-- htmlbuild:css -->
+    <link rel="stylesheet" href="../styles/libs/normalize.css" media="all"/>
+    <link rel="stylesheet" href="../styles/fonts.css" media="all"/>
+    <link rel="stylesheet" href="../styles/libs/animate.css" media="all"/>
+    <link rel="stylesheet" href="../styles/libs/swiper.css" media="all"/>
+    <link rel="stylesheet" href="../styles/libs/bootstrap-grid.css" media="all"/>
+    <!-- endbuild -->
+    <link rel="stylesheet" href="../styles/style.css" media="all"/>
+    <title>Title</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+  </head>
+  <body>
+    <!-- BEGIN HEADER-->
+    <!-- END HEADER-->
+    <!-- BEGIN MAIN-->
+    <section class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h3 class="main__title">Отремонитруем вашу технику уже сегодня!</h3>
+            <p class="main__desc">90% неисправностей устраним в день обращения</p>
+            <ul class="main__list">
+              <li class="main__list-item">
+                <svg class="main__list-icon">
+                  <use xlink:href="../img/sprite/sprite.svg#guarantee"></use>
+                </svg>Гарантия сервисного центра до 3 лет
+              </li>
+              <li class="main__list-item">
+                <svg class="main__list-icon">
+                  <use xlink:href="../img/sprite/sprite.svg#user"></use>
+                </svg>Выезд мастера в любую точку города
+              </li>
+              <li class="main__list-item">
+                <svg class="main__list-icon">
+                  <use xlink:href="../img/sprite/sprite.svg#settings"></use>
+                </svg>Только оригинальные запчасти
+              </li>
+            </ul>
+            <div class="main__order">
+              <div class="main__order-block">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="main__order-box">
+                      <h4 class="main__order-title">Получите бесплатную консультацию по вашей неисправности</h4>
+                      <p class="main__order-desc">Наша техподдержка работает 24/7</p>
+                      <div class="main__form">
+                        <form class="form" action="/" method="post">
+                          <input class="form__input" name="phone" type="text" placeholder="Ваш телефон" required="required"/>
+                          <input class="input-hidden" type="hidden" name="name" value="Бесплатная консультация"/>
+                          <input class="button button_orange button_shadow form__button main__button" type="submit" value="Получить"/>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="main__kitchen"><img class="main__kitchen-icebox wow fadeInRight" src="../img/icebox.png" alt="@@" data-wow-delay="0s"/><img class="main__kitchen-master wow fadeIn" src="../img/kitchen-master.png" alt="@@" data-wow-delay="0.5s"/><img class="main__kitchen-bg" src="../img/kitchen.jpg" alt="@@"/></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END MAIN-->
+    <!-- BEGIN REPAIR-->
+    <section class="repair">
+      <div class="repair__container container">
+        <div class="row">
+          <div class="col-lg-10 repair__field">
+            <div class="row">
+              <div class="col-lg-12 repair__main-block">
+                <h3 class="repair__title">Профессионально ремонтируем бытовую технику с 2009 года</h3>
+                <p class="repair__desc">Осуществляем широкий спектр услуг</p>
+                <div class="row repair__services">
+                  <div class="col-lg-4 col-6"><a class="repair__services-item" href="#services" title="">
+                      <div class="repair__services-mask">
+                        <div class="repair__services-content">
+                          <p>Ремонт холодильников</p><span>Подробнее</span>
+                        </div>
+                      </div><img src="../img/repairs/repair-1.jpg" alt="@@"/></a></div>
+                  <div class="col-lg-4 col-6"><a class="repair__services-item" href="#services" title="">
+                      <div class="repair__services-mask">
+                        <div class="repair__services-content">
+                          <p>Ремонт стиральных машин</p><span>Подробнее</span>
+                        </div>
+                      </div><img src="../img/repairs/repair-2.jpg" alt="@@"/></a></div>
+                  <div class="col-lg-4 col-6"><a class="repair__services-item" href="#services" title="">
+                      <div class="repair__services-mask">
+                        <div class="repair__services-content">
+                          <p>Ремонт посудомоечных машин</p><span>Подробнее</span>
+                        </div>
+                      </div><img src="../img/repairs/repair-3.jpg" alt="@@"/></a></div>
+                </div>
+              </div>
+              <div class="col-lg-12 repair__last-block">
+                <div class="repair__order" data-wow-delay="1.25s">
+                  <div class="repair__order-block">
+                    <div class="row d-flex justify-content-end">
+                      <div class="col-lg-6 col-md-12">
+                        <div class="repair__order-box">
+                          <h4 class="repair__order-title">Скидка 25% на ремонт стиральной машины</h4>
+                          <p class="repair__order-desc">При заказе с сайта до конца текущего месяца</p>
+                          <p class="repair__order-desc_orange">Оставьте заявку, чтобы успеть сэкономить на ремонте</p>
+                          <div class="repair__form">
+                            <form class="form" action="/" method="post">
+                              <input class="form__input" name="phone" type="text" placeholder="Ваш телефон" required="required"/>
+                              <input type="hidden" name="sale" value="Скидка 25%"/>
+                              <input class="button button_orange button_shadow form__button" type="submit" value="CЭКОНОМИТЬ"/>
+                            </form>
+                            <p class="repair__form-desc">Нажимая на кнопку “Сэкономить” - вы даете согласие на обработку персональных данных</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 col-md-12"><img class="repair__master" src="../img/master.png" alt="@@"/></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="repair__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/repair.png" alt="@@"/></div>
+                <div class="swiper-slide"><img src="../img/repair.png" alt="@@"/></div>
+                <div class="swiper-slide"><img src="../img/repair.png" alt="@@"/></div>
+                <div class="swiper-slide"><img src="../img/repair.png" alt="@@"/></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END REPAIR-->
+    <!-- BEGIN SERVICES-->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="services__title">Услуги и цены сервисного центра CompName</h3>
+          </div>
+        </div>
+        <div class="row services__table">
+          <div class="col-lg-12">
+            <div class="row services__table-header">
+              <div class="col-lg-8 col-6">
+                <p>Поломка</p>
+              </div>
+              <div class="col-lg-2 col-3">
+                <p>Стоимость</p>
+              </div>
+              <div class="col-lg-2 col-3 services__hide">
+                <p class="text-right">Заказ</p>
+              </div>
+            </div>
+            <!-- field-->
+            <div class="row services__table-field">
+              <div class="col-lg-8 col-6">
+                <p>Наименование услуги</p>
+              </div>
+              <div class="col-lg-2 col-3">
+                <p>от 450 Руб.</p>
+              </div>
+              <div class="col-lg-2 col-3 services__hide"><a class="services__buy linkCall link-repair-one" href="#" title="">Заказать</a></div>
+            </div>
+            <div class="row services__table-field">
+              <div class="col-lg-8 col-6">
+                <p>Наименование услуги</p>
+              </div>
+              <div class="col-lg-2 col-3">
+                <p>от 450 Руб.</p>
+              </div>
+              <div class="col-lg-2 col-3 services__hide"><a class="services__buy linkCall link-repair-two" href="#" title="">Заказать</a></div>
+            </div>
+            <div class="row services__table-field">
+              <div class="col-lg-8 col-6">
+                <p>Наименование услуги</p>
+              </div>
+              <div class="col-lg-2 col-3">
+                <p>от 450 Руб.</p>
+              </div>
+              <div class="col-lg-2 col-3 services__hide"><a class="services__buy linkCall link-repair-three" href="#" title="">Заказать</a></div>
+            </div>
+            <div class="row services__table-field">
+              <div class="col-lg-8 col-6">
+                <p>Наименование услуги</p>
+              </div>
+              <div class="col-lg-2 col-3">
+                <p>от 450 Руб.</p>
+              </div>
+              <div class="col-lg-2 col-3 services__hide"><a class="services__buy linkCall link-repair-one" href="#" title="">Заказать</a></div>
+            </div>
+            <div class="row services__table-field">
+              <div class="col-lg-8 col-6">
+                <p>Наименование услуги</p>
+              </div>
+              <div class="col-lg-2 col-3">
+                <p>от 450 Руб.</p>
+              </div>
+              <div class="col-lg-2 col-3 services__hide"><a class="services__buy linkCall link-repair-two" href="#" title="">Заказать</a></div>
+            </div>
+            <div class="row services__table-field">
+              <div class="col-lg-8 col-6">
+                <p>Наименование услуги</p>
+              </div>
+              <div class="col-lg-2 col-3">
+                <p>от 450 Руб.</p>
+              </div>
+              <div class="col-lg-2 col-3 services__hide"><a class="services__buy linkCall link-repair-three" href="#" title="">Заказать</a></div>
+            </div>
+            <div class="row services__table-field not-show">
+              <div class="col-lg-8 col-6">
+                <p>Наименование услуги</p>
+              </div>
+              <div class="col-lg-2 col-3">
+                <p>от 450 Руб.</p>
+              </div>
+              <div class="col-lg-2 col-3 services__hide"><a class="services__buy linkCall link-repair-one" href="#" title="">Заказать</a></div>
+            </div>
+            <div class="row services__table-field not-show">
+              <div class="col-lg-8 col-6">
+                <p>Наименование услуги</p>
+              </div>
+              <div class="col-lg-2 col-3">
+                <p>от 450 Руб.</p>
+              </div>
+              <div class="col-lg-2 col-3 services__hide"><a class="services__buy linkCall link-repair-two" href="#" title="">Заказать</a></div>
+            </div>
+            <div class="row services__table-field not-show">
+              <div class="col-lg-8 col-6">
+                <p>Наименование услуги</p>
+              </div>
+              <div class="col-lg-2 col-3">
+                <p>от 450 Руб.</p>
+              </div>
+              <div class="col-lg-2 col-3 services__hide"><a class="services__buy linkCall link-repair-three" href="#" title="">Заказать</a></div>
+            </div>
+            <div class="row services__table-field not-show">
+              <div class="col-lg-8 col-6">
+                <p>Наименование услуги</p>
+              </div>
+              <div class="col-lg-2 col-3">
+                <p>от 450 Руб.</p>
+              </div>
+              <div class="col-lg-2 col-3 services__hide"><a class="services__buy linkCall link-repair-one" href="#" title="">Заказать</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-12"><a class="button button_orange button_shadow services__button linkCall services__button-mobile" href="#" title="">Заказать</a></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-center"><a class="services__link show-btn" href="#" title="">
+              <svg class="services__link-icon">
+                <use xlink:href="../img/sprite/sprite.svg#eye"></use>
+              </svg>
+              <div class="services__link-desc">Увидеть все возможные поломки</div></a></div>
+          <div class="col-lg-4"><a class="services__buy-popup button button_orange button_shadow services__button linkCall link-services" href="#" title="">Оставить заявку</a></div>
+          <div class="col-lg-4"></div>
+        </div>
+      </div>
+    </section>
+    <!-- END SERVICES-->
+    <!-- BEGIN BRANDS-->
+    <section class="brands">
+      <div class="brands__container container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="brands__title">Ремонтируем технику любого бренда</h3>
+            <p class="brands__desc">Выберите производителя Вашей техники</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item"><img src="../img/brands/brand-2.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item"><img src="../img/brands/brand-3.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item"><img src="../img/brands/brand-4.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item"><img src="../img/brands/brand-5.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item"><img src="../img/brands/brand-6.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item"><img src="../img/brands/brand-12.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item"><img src="../img/brands/brand-11.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item"><img src="../img/brands/brand-10.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item"><img src="../img/brands/brand-9.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item"><img src="../img/brands/brand-8.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item"><img src="../img/brands/brand-7.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item not-show-brands"><img src="../img/brands/brands1.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item not-show-brands"><img src="../img/brands/brands2.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item not-show-brands"><img src="../img/brands/brands3.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item not-show-brands"><img src="../img/brands/brands4.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item not-show-brands"><img src="../img/brands/brands6.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item not-show-brands"><img src="../img/brands/brands8.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item not-show-brands"><img src="../img/brands/brands9.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item not-show-brands"><img src="../img/brands/brands11.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item not-show-brands"><img src="../img/brands/brands17.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item not-show-brands"><img src="../img/brands/brands18.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item not-show-brands"><img src="../img/brands/brands19.png" alt="@@"/></div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 brands__item not-show-brands"><img src="../img/brands/fujitsu.png" alt="@@"/></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12"><a class="brands__link show-btn-brands" href="#" title="">
+              <svg class="brands__link-icon">
+                <use xlink:href="../img/sprite/sprite.svg#eye"></use>
+              </svg>
+              <div class="brands__link-desc">Увидеть все бренды</div></a></div>
+        </div>
+      </div>
+    </section>
+    <!-- END BRANDS-->
+    <!-- BEGIN ABOUT-->
+    <section class="about" id="about">
+      <div class="about__container container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="about__preview"><img src="../img/about.jpg" alt="@@"/></div>
+          </div>
+          <div class="col-lg-9">
+            <h3 class="about__title">О компании CompName</h3>
+            <!--h4.about__subtitle Заголовок рассказа о компании-->
+            <p class="about__desc">Наш сервисный центр  предоставляет услуги по осуществлению ремонта и последующего обслуживания посудомоечных и стиральных машин, холодильников бытового назначения.</p>
+            <p class="about__desc">Данные услуги мы выполняем непосредственно в нашем сервисном центре, либо с выездом специалистов к Вам на дом.</p>
+            <p class="about__desc">Наш опыт и обширная база предприятий, являющихся поставщиками различных комплектующих, обеспечивает нам выполнение качественного и оперативного ремонта любой бытовой техники вне зависимости от серьезности возникшей проблемы. Кроме того, долгосрочные деловые отношения с поставщиками дают возможность нашего сервисного центра предоставлять услуги по приемлемым ценам и предоставлять дополнительные скидки.</p>
+            <ul class="about__list container">
+              <li class="about__list-item col-lg-3 col-12">
+                <svg class="about__list-icon">
+                  <use xlink:href="../img/sprite/sprite.svg#calendar"></use>
+                </svg>
+                <p>Работаем более 15 лет на рынке</p>
+              </li>
+              <li class="about__list-item col-lg-3 col-12">
+                <svg class="about__list-icon">
+                  <use xlink:href="../img/sprite/sprite.svg#settings"></use>
+                </svg>
+                <p>В наличии более 1000 запчастей</p>
+              </li>
+              <li class="about__list-item col-lg-3 col-12">
+                <svg class="about__list-icon">
+                  <use xlink:href="../img/sprite/sprite.svg#searcfh"></use>
+                </svg>
+                <p>Проведено более 250 диагностик</p>
+              </li>
+              <li class="about__list-item col-lg-3 col-12">
+                <svg class="about__list-icon">
+                  <use xlink:href="../img/sprite/sprite.svg#tools"></use>
+                </svg>
+                <p>Отремонтировано более 400 ед. техники</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END ABOUT-->
+    <!-- BEGIN SPECIALISTS-->
+    <section class="specialists" id="masters">
+      <div class="specialists__container container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="specialists__title">Наши специалисты</h3>
+            <p class="specialists__desc">Мы проводим качественный отбор мастеров. <br/> Каждый из них имеет опыт более 5 лет в сфере ремонта крупной бытовой техники</p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-between specialists__body">
+          <div class="col-lg-3 col-md-4 specialists__block">
+            <div class="specialists__block-preview">
+              <div class="specialists__block-mask">
+                <div class="specialists__block-content">
+                  <p>Иван Иванов</p><span>работает с 2013 г</span>
+                </div>
+              </div><img src="../img/specialists/specialist-1.png" alt="@@"/>
+            </div><a class="button button_orange button_shadow specialists__button linkCall link-master-one" href="#" title="">Вызвать мастера</a>
+          </div>
+          <div class="col-lg-3 col-md-4 specialists__block">
+            <div class="specialists__block-preview">
+              <div class="specialists__block-mask">
+                <div class="specialists__block-content">
+                  <p>Иван Иванов</p><span>работает с 2013 г</span>
+                </div>
+              </div><img src="../img/specialists/specialist-2.png" alt="@@"/>
+            </div><a class="button button_orange button_shadow specialists__button linkCall link-master-two" href="#" title="">Вызвать мастера</a>
+          </div>
+          <div class="col-lg-3 col-md-4 specialists__block">
+            <div class="specialists__block-preview">
+              <div class="specialists__block-mask">
+                <div class="specialists__block-content">
+                  <p>Иван Иванов</p><span>работает с 2013 г</span>
+                </div>
+              </div><img src="../img/specialists/specialist-3.png" alt="@@"/>
+            </div><a class="button button_orange button_shadow specialists__button linkCall link-master-three" href="#" title="">Вызвать мастера</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SPECIALISTS-->
+    <!-- BEGIN REVIEWS-->
+    <section class="reviews" id="reviews">
+      <div class="container reviews__container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="reviews__title">Реальные отзывы наших клиентов</h3>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide__img"><img src="../img/review.jpg" alt="@@"/></div>
+                  <div class="swiper-slide__content">
+                    <div class="swiper-slide__content-header">
+                      <p>Александра</p><span>15.05.2019</span>
+                    </div>
+                    <p>Эти ребята просто лучшие мастера. Произошла беда, можно сказать небольшой домашний потоп, даже не могла и подумать, что стиралка может потечь во время стирки. Вс вода разлилась на пол, хорошо быстро среагировала и убрала. В доме маленькие дети, нужно стирать каждый день, муж на работе очень занят, да и в ремонте не очень то соображает. Я как домохозяйка спросила начала искать мастеров и оставила заявку на сайте со своего телефона. Мне ответили быстро, а также приехали через пару часов и мастер все отремонтировал. Большое спасибо, за такой оперативный ремонт, а также за то, что дали гарантию, компания серьезная.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__img"><img src="../img/review-3.jpg" alt="@@"/></div>
+                  <div class="swiper-slide__content">
+                    <div class="swiper-slide__content-header">
+                      <p>Елизавета</p><span>16.06.2019</span>
+                    </div>
+                    <p>Сайт интересный тем, что я сама могу выбрать мастера, который приедет на ремонт, такой фишки еще ни у кого не видела. Стиралка перестала греть воду и вещи стали некачественно стираться. Муж пытался разобрать, но у него не получилось плюнул на все это дело и мы принялись искать мастера. Нашли этот сайт и оставили заявку на ремонт, а также выбрали мастера из предложенных. Приехал этот человек и поменял нам тен, мы заранее указали марку стиральной машинки и проблему, так что он уже приехал со всем готовым, сделал все быстро.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__img"><img src="../img/review-2.jpg" alt="@@"/></div>
+                  <div class="swiper-slide__content">
+                    <div class="swiper-slide__content-header">
+                      <p>Вадим</p><span>21.06.2019</span>
+                    </div>
+                    <p>Морозилка отказалась работать, на удивление холодильник морозил нормально, а вот морозильная камера подвела. Проблему нужно было решать очень быстро из-за большого количество еды. У нас очень огромный холодильник и в нем много мяса и замороженных фруктов. Все это могло испортится, в быстром режиме нашел сайт в интернете, оставил заявку, не стал дожидаться когда перезвонят и сам им позвонил, попросил, чтоб срочно приехал мастер. В течении часа приехал человек и провел над холодильником около двух часов. Не знаю, что делал, но проблему решил, я остался довольный, а продукты были спасены. </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__img"><img src="../img/review-5.jpg" alt="@@"/></div>
+                  <div class="swiper-slide__content">
+                    <div class="swiper-slide__content-header">
+                      <p>Константин</p><span>3.07.2019</span>
+                    </div>
+                    <p>Решил сделать жене подарок и купить посудомоечную машину на день рождения. Идея просто супер, и все вроде бы классно, привезли мне с интернет магазина прямо на дом и занесли в квартиру. Но вот нужно было ее подключать. С этим я не справился, понял что нужны те кто соображают, я только хорошо разбираюсь в сфере продаж, а по ремонту ничего не понимаю. Нашел в интернете сайт и сказал, что у меня срочный вызов, срывается подарок жене, приезжайте и спасайте. Приехал рабочий и очень быстро все подключил и настроил, рассказал и показал, как пользоваться. Работой компании остался доволен, спасли мой подарок.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__img"><img src="../img/review-4.jpg" alt="@@"/></div>
+                  <div class="swiper-slide__content">
+                    <div class="swiper-slide__content-header">
+                      <p>Кристина</p><span>17.08.2019</span>
+                    </div>
+                    <p>У меня сломался холодильник, как я поняла, что причина в том, что сын сломал сзади холодильника решетку и вытек фрион. Причину поломки понимаю, а вот возможности устранить проблему не было. Пришлось вызывать мастера, хорошо, что уже знаю надежную компанию сразу обратилась к профессионалом. Мне запаяли место утечки и закачали новый фреон в систему, после чего холодильник перевели в тестовый режим, чтобы проверить его работу. Все сделали качественно в этом они уж молодцы, порадовало, то, что мне, как постоянному клиенту еще и скидку сделали.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__img"><img src="../img/review-6.jpg" alt="@@"/></div>
+                  <div class="swiper-slide__content">
+                    <div class="swiper-slide__content-header">
+                      <p>Павел</p><span>25.01.2020</span>
+                    </div>
+                    <p>У меня есть печка для выпечки, поскольку я увлекаюсь кулинарией и здоровой пищей. С ней произошла проблема, она перестала включаться, кроме этого у меня давно уже была сломана мультиварка, а тут еще и стиральная машинка полетела. Нужно только мастера вызывать. Немного поискал в интернете компании и почитал о них отзывы. Остановился на этой компании из-за хороших отзывов. Позвонил по номеру телефона и мне отремонтировали все, что только было неисправно из техники дома. Действительно правду люди пишут о них хорошо, работают добросовестно.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__img"><img src="../img/review-7.jpg" alt="@@"/></div>
+                  <div class="swiper-slide__content">
+                    <div class="swiper-slide__content-header">
+                      <p>Александра</p><span>25.01.2020</span>
+                    </div>
+                    <p>Мне понравилось, что они работают, очень оперативно. Я обратилась поздно вечером с тем, что накрылся мой холодильник, уже с раннего утра приехал мастер и всего за пару часов, все сделал. Пришлось ему конечно съездить к себе на базу и привезти недостающие детали, сама понимаю, что всего с собой они не могут взять,а случаи бывают разные. И у меня накрылось, что-то, что редко ломается, название честно говоря уже не помню, да это и не важно. Главное, что сделали быстро и хорошо, все работ и холодильником можно пользоваться.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__img"><img src="../img/review-8.jpg" alt="@@"/></div>
+                  <div class="swiper-slide__content">
+                    <div class="swiper-slide__content-header">
+                      <p>Владислав</p><span>20.01.2020</span>
+                    </div>
+                    <p>Компания довольно солидная и менеджеры очень ответственны. Договорились, что мастер приедет в указанное время и он приехал. Я предварительно описал проблему и модель стиральной машины, чтоб мастер приехал со всеми возможными запчастями к ней, это очень удобно и экономит время. Видно, что человек профессионал, быстро поменял запчасть, а также посмотрел общее состояние машинки и рассказал, что еще бы в будущем желательно было бы заменить. Проверили работоспособность, я убедился, что все работает, расплатился с человеком и поехал по своим делам.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END REVIEWS-->
+    <!-- BEGIN QUESTIONS-->
+    <section class="questions">
+      <div class="container questions__container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <form class="questions__form form" action="/" method="post">
+              <h3 class="questions__title">У Вас остались вопросы?</h3>
+              <p class="questions__desc"><span>Мы перезвоним Вам в течение 2 минут </span>и бесплатно проконсультируем по любому возникшему вопросу</p>
+              <input class="form__input" name="phone" type="text" placeholder="Ваш телефон" required="required"/>
+              <textarea class="form__textarea" name="msg" placeholder="Ваш комментарий" required="required"></textarea>
+              <input class="button button_orange button_shadow form__button" type="submit" value="Отправить"/>
+            </form>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12"><img class="questions__preview" src="../img/questions.jpg" alt="@@"/></div>
+        </div>
+      </div>
+    </section>
+    <!-- END QUESTIONS-->
+    <!-- BEGIN MAP-->
+    <div class="ymap-container">
+      <div class="loader loader-default"></div>
+      <div id="map"></div>
+    </div>
+    <!-- END MAP-->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6"><a class="footer__logo logo" href="#" title="">
+              <svg class="logo__icon">
+                <use xlink:href="../img/sprite/sprite.svg#car"></use>
+              </svg>
+              <div class="logo__content">
+                <p class="logo__title">Company Name</p>
+                <p class="logo__desc">Выездной сервис по ремонту крупной бытовой техники</p>
+              </div></a></div>
+          <div class="col-lg-6 col-md-12">
+            <div class="footer__copyright">
+              <p>Coopyright © 2019 Все права защищены</p>
+              <p>Информация на сайте не является публичной офертой</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 d-flex justify-content-lg-end justify-content-md-center">
+            <div class="footer__buttons"><a class="button button_yellow linkCall" href="#" title="">Связаться с нами</a><a class="button button_orange button_shadow linkCallThx" href="#" title="">Стать партнером</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER-->
+    <!-- BEGIN POPUPS-->
+    <section class="popup popupCall">
+      <h2 class="popup__title">Есть вопросы? <br/>Свяжитесь с нами, мы Вам перезвоним!</h2><a class="popup__close" href="#" title="">
+        <svg class="popup__icon">
+          <use xlink:href="../img/sprite/sprite.svg#close"></use>
+        </svg></a>
+      <form class="form send-form popup__form" action="/" method="post">
+        <input class="form__input" type="text" name="name" placeholder="Ваше имя" required="required"/>
+        <input class="form__input phone-mask" type="text" name="phone" placeholder="Ваш телефон" required="required"/>
+        <input class="input-hidden" type="hidden" name="name" value=""/>
+        <input class="form__button button button_yellow button_shadow-light" type="submit" value="Связаться с нами"/>
+      </form>
+    </section>
+    <section class="popup popupThanks">
+      <h2 class="popup__title">Спасибо! <br/> Мы перезвоним Вам за 5 минут!</h2><a class="popup__close" href="#" title="">
+        <svg class="popup__icon">
+          <use xlink:href="../img/sprite/sprite.svg#close"></use>
+        </svg></a><a class="popup__link button button_yellow button_shadow-light close" href="#" title="">Хорошо</a>
+    </section>
+    <!-- END POPUPS-->
+    <!-- htmlbuild:js -->
+    <script src="../js/libs/jquery-3.4.1.min.js"></script>
+    <script src="../js/libs/jquery.maskedinput.min.js"></script>
+    <script src="../js/libs/wow.js"></script>
+    <script src="../js/libs/svg4everybody.min.js"></script>
+    <script src="../js/libs/jquery.bpopup.min.js"></script>
+    <script src="../js/libs/swiper.js"></script>
+    <!-- endbuild -->
+    <script src="../js/scripts.js"></script>
+    <!-- END SCRIPTS-->
+  </body>
+</html>

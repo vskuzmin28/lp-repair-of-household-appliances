@@ -1,0 +1,478 @@
+// repair
+
+
+.repair {
+    position: relative;
+    height: 922px;
+
+    @media screen and (max-width: 1340px) {
+        height: 1002px;
+    }
+
+    @media screen and (max-width: 991px) {
+        height: auto;
+    }
+
+    @media screen and (min-width: 991px) and (max-width: 1200px) {
+        height: 900px;
+    }
+
+    &__container {
+
+        @media screen and (max-width: 991px) {
+
+            .repair__services .col-lg-4:nth-child(2), .repair__services .col-lg-4:nth-child(3) {
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (max-width: 1340px) {
+            
+            .repair__block-slider {
+                display: none;
+            }
+
+        }
+
+        .repair__field {
+            @media screen and (max-width: 1340px) {
+                flex: 0 0 100% !important;
+                max-width: 96% !important;
+            }
+        }
+
+    }
+
+    &__title {
+        margin: 0;
+        margin-left: -1px;
+        margin-top: 42px;
+        font-size: 32px;
+        font-family: 'Futura PT';
+        font-weight: 600;
+        text-transform: uppercase;
+        color: @black;
+
+        @media screen and (max-width: 991px) {
+            font-size: 28px;
+        }
+    }
+
+    &__desc {
+        margin: 0;
+        margin-left: -2px;
+        margin-top: 4px;
+        font-size: 22px;
+        font-family: 'Futura PT Book';
+        font-weight: 400;
+        color: @black;
+
+    }
+
+    &__services {
+        margin-left: -16px;
+        margin-top: 27px;
+
+        @media screen and (max-width: 991px) {
+            margin-left: 0;
+        }
+
+        .col-6 {
+            @media screen and (max-width: 400px) {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+        &-item {
+            width: 92.5%;
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            -webkit-box-shadow: 15px 0px 84px 0px rgba(0,0,0,0.23);
+            -moz-box-shadow: 15px 0px 84px 0px rgba(0,0,0,0.23);
+            box-shadow: 15px 0px 84px 0px rgba(0,0,0,0.23);
+
+            @media screen and (max-width: 400px) {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            img {
+                width: 100%;
+                @media screen and (max-width: 991px) {
+                    width: 100%;
+                }
+            }
+
+            @media screen and (max-width: 991px) {
+                width: 100%;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                zoom: 1;
+            }
+
+            &:nth-child(2) {
+                margin-left: -30px !important;
+
+                @media screen and (max-width: 991px) {
+                    margin: 0;
+                }
+
+            }
+
+        }
+
+        &-content {
+            transition: ease-out 0.5s;
+            width: 80%;
+            margin-left: 18px;
+            margin-bottom: 8px;
+
+            @media screen and (max-width: 991px) {
+                transition: none;
+            }
+
+        }
+
+        &-mask {
+            position: absolute;
+            display: flex;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.43);
+
+            p {
+                margin: 0 0 0px 0px;
+                display: block;
+                font-size: 22px;
+                font-family: 'Futura PT Extra';
+                font-weight: 900;
+                text-transform: uppercase;
+                color: @white;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+
+            }
+
+            span {
+                transition: ease 0.5s;
+                visibility: hidden;
+                opacity: 0;
+                width: 100%;
+                font-size: 16px;
+                font-family: 'Futura PT Demi';
+                color: @white;
+
+                @media screen and (max-width: 991px) {
+                    transition: none;
+                    opacity: 1;
+                    visibility: visible;
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                    display: block;
+                }
+
+            }
+
+            &:hover {
+                position: absolute;
+                display: flex;
+                //justify-content: flex-start;
+                //align-items: center;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.43);
+
+                @media screen and (max-width: 991px) {
+                    position: absolute;
+                    display: flex;
+                    align-items: flex-end;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.43);
+
+                } 
+
+                .repair__services-content {
+                    margin-left: 22px;
+                    margin-bottom: 126px;
+
+                    @media screen and (max-width: 991px) {
+                        margin-left: 4px;
+                        margin-bottom: 20px;
+                    }                    
+
+                }
+
+                span {
+                    margin: 0px 0 0 0px;
+                    visibility: visible;
+                    opacity: 1;
+                    width: 100%;
+                    font-size: 16px;
+                    font-family: 'Futura PT Demi';
+                    color: @white;
+
+                    @media screen and (max-width: 991px) {
+                        margin-left: 14px;
+                        margin-bottom: 8px;
+                        font-size: 14px;
+                    }        
+
+                }
+
+                p {
+                    font-size: 22px !important;
+                    margin-bottom: 10px;
+                    visibility: visible;
+                    opacity: 1;
+
+                    @media screen and (max-width: 991px) {
+                        margin-left: 14px;
+                        margin-bottom: 10px;
+                        font-size: 14px !important;
+                    }        
+
+                }
+            }
+
+        }
+
+    }
+
+    &__slider {
+        right: -208px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        /* Fix of Webkit flickering */
+        z-index: 1;
+        height: 922px;
+
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+
+        @media screen and (max-width: 1340px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 1340px) and (max-width: 1560px) {
+            width: 260px;
+            right: -54px;
+        }
+
+        .swiper-pagination-bullets {
+            left: 32px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 13px;
+            height: 13px;
+            border: 2px solid @white;
+            background: 0;
+            opacity: 1;
+            outline: none;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: @white;
+        }
+
+    }
+
+    &__order {
+        bottom: 0;
+        position: relative;
+
+        &-block {
+            position: absolute;
+            padding-top: 22px;
+            bottom: -366px;
+            right: 40px;
+            padding-right: 22px;
+            width: 1000%;
+            z-index: 30;
+            display: flex;
+            justify-content: flex-end;
+            //background: #000;
+            -webkit-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.08);
+            -moz-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.08);
+            box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.08);
+
+            @media screen and (max-width: 991px) {
+                bottom: inherit;
+                right: inherit;
+                margin: 20px 0;
+                padding: 20px;
+                position: relative;
+                width: 104%;
+                justify-content: center;
+
+                .row {
+                    justify-content: center !important;
+                }
+
+            }
+
+            @media screen and (min-width: 991px) and (max-width: 1200px) {
+                right: -44px;
+            }
+
+            @media screen and (min-width: 1200px) and (max-width: 1340px) {
+                right: -44px;
+            }
+
+            img {
+                display: block;
+                float: right;
+
+                @media screen and (max-width: 991px) {
+                    display: none;
+                }
+
+            }
+        }
+
+        &-box {
+            width: 193%;
+            margin-left: -464px;
+
+            @media screen and (max-width: 991px) {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+
+            @media screen and (min-width: 991px) and (max-width: 1200px) {
+                margin-left: -510px !important;
+                width: 160%;
+            }
+
+            @media screen and (min-width: 1200px) and (max-width: 1340px) {
+                margin-left: -686px !important;
+            }
+
+            @media screen and (min-width: 991px) and (max-width: 1340px) {
+                margin-left: -490px;
+            }
+
+
+        }
+
+        &-title {
+            z-index: 10;
+            position: absolute;
+            margin: 0;
+            margin-top: -20px;
+            font-size: 18px;
+            width: 240%;
+            font-family: 'Futura PT';
+            font-weight: 600;
+            text-transform: uppercase;
+            color: @black;
+
+            @media screen and (max-width: 991px) {
+                margin: 0;
+                position: relative;
+                width: 100%;
+            }
+
+        }
+
+        &-desc {
+            margin-top: 42px;
+            font-size: 18px;
+            font-family: 'Futura PT';
+            font-weight: 500;
+            color: @black;
+
+            @media screen and (max-width: 767px) {
+                margin: 10px 0 0 0;
+            }
+
+            @media screen and (max-width: 991px) {
+                position: relative;
+                width: 100%;
+            }
+
+            &_orange {
+                z-index: 10;
+                margin-top: -2px;
+                position: absolute;
+                width: 190%;
+                font-size: 18px;
+                font-family: 'Futura PT';
+                font-weight: 500;
+                color: @orange;
+
+                @media screen and (max-width: 767px) {
+                    margin-top: 12px;
+                    margin-bottom: -38px;
+                }
+
+                @media screen and (max-width: 991px) {
+                    position: relative;
+                    width: 100%;
+                }
+
+            }
+
+        }
+
+    }
+
+    &__form {
+        margin-top: 52px;
+
+        input[type="text"] {
+            margin-bottom: 14px;
+            height: 51px;
+        }
+
+        &-desc {
+            margin: 0;
+            margin-top: 10px;
+            position: relative;
+            width: auto;
+            font-size: 12px;
+            font-family: 'Futura PT Book';
+            color: #949494;
+            text-align: center;
+
+            @media screen and (max-width: 767px) {
+                margin-top: 12px;
+            }
+            
+        }
+
+    }
+
+}
+
+.repair__services {
+    .col-lg-4:nth-child(2),
+    .col-lg-4:nth-child(3) {
+        margin-left: -10px;
+
+        @media screen and (max-width: 991px) {
+            margin: 0;
+        }
+
+    }
+}
+.repair .repair__services .col-6,
+.repair .repair__services .col-lg-4  {
+    @media screen and (max-width: 400px) {
+        padding: 0 0px !important;
+    }
+}

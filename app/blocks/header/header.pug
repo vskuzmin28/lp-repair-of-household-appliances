@@ -1,0 +1,35 @@
+mixin header(data)
+    - data = data || {};
+header.header
+        .container
+            .row.header__row
+                .burger
+                    span
+                    span
+                    span
+                .col-lg-3.col-md-3
+
+                    a.header__logo.logo(href="#" title="")
+                        svg.icon.logo__icon
+                            use(xlink:href="../img/sprite/sprite.svg#car")
+                        .logo__content
+                            p.logo__title Company Name
+                            p.logo__desc Выездной сервис по ремонту крупной бытовой техники
+                .col-lg-6.col-md-12
+                    nav.header__nav
+                        ul.header__nav-list
+                            li.header__nav-item
+                                a(href="#services" title="") Услуги и цены
+                            li.header__nav-item
+                                a(href="#about" title="") О компании
+                            li.header__nav-item
+                                a(href="#masters" title="") Мастера
+                            li.header__nav-item
+                                a(href="#reviews" title="") Отзывы
+                            li.header__nav-item
+                                a(href="#map" title="") Контакты
+
+                .col-lg-3.col-md-12.d-flex.justify-content-end
+
+                    a.header__button.button.button_orange.button_shadow-light.linkCall(href="#" title="") Связаться с нами
+                    a.header__button-call(href="tel:9999999999") 8 800 555 3535

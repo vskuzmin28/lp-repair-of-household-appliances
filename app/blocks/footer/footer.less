@@ -1,0 +1,183 @@
+// footer
+
+.footer {
+    padding: 54px 0;
+    height: auto;
+    background: @white;
+
+    @media screen and (max-width: 991px) {
+        padding: 24px 0;
+        height: auto;
+    }
+
+    &__copyright {
+        margin-top: 15px;
+        padding-left: 51px;
+
+        @media screen and (max-width: 770px) {
+            bottom: -180px !important;
+        }
+
+        @media screen and (max-width: 991px) {
+            bottom: -90px;
+            margin-bottom: 20px;
+            position: absolute;
+            width: 100%;
+            padding: 0;
+            right: 0%;
+            text-align: center;
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: 4px;
+            padding: 0;
+            font-family: 'Futura PT';
+            font-size: 12px;
+            font-weight: 500;
+            color: @black;
+        }
+
+    }
+
+    &__logo {
+        margin-left: -16px !important;
+
+        @media screen and (max-width: 991px) {
+            margin: 0 auto !important;
+        }
+
+    }
+
+    &__buttons {
+        
+        margin: -4px -28px 0 0;
+        width: 195px;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: 770px) {
+            position: absolute;
+            margin-right: 0;
+            bottom: -110px !important;
+            width: 90%;
+            margin-right: 5% !important;
+            margin-left: 5% !important;
+            text-indent: 8px;
+        }
+
+        @media screen and (max-width: 991px) {
+            margin-right: 28px;
+            bottom: -20px;
+            right: 0;
+            position: absolute;
+        }
+
+        a {
+            margin-bottom: 10px;
+        }
+
+    }
+
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    width: 285px;
+    height: 57px;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &__icon {
+        display: block;
+        width: 160px;
+        height: 57px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title, &__desc {
+        font-family: 'Futura PT';
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: @orange;
+    }
+
+    &__title {
+        margin: 1px 0 9px -2px;
+        padding: 0;
+        letter-spacing: 0.7px;
+    }
+
+    &__desc {
+        margin: 0 0 0 -2px;
+        padding: 0;
+        font-size: 12px;
+        color: @black;
+    }
+
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    border: 0;
+    font-family: 'Futura PT';
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &_orange {
+        background: @orange;
+        color: @white;
+    }
+
+    &_yellow {
+        background: @yellow;
+        color: @black;
+    }
+
+    &_shadow {
+        -webkit-box-shadow: 15px 0px 32px 0px rgba(0,0,0,0.29);
+        -moz-box-shadow: 15px 0px 32px 0px rgba(0,0,0,0.29);
+        box-shadow: 15px 0px 32px 0px rgba(0,0,0,0.29);
+
+        &:hover {
+            box-shadow: none;
+        }
+
+    }
+
+    &_shadow-light {
+        -webkit-box-shadow: 15px 0px 32px 0px rgba(0,0,0,0.06);
+        -moz-box-shadow: 15px 0px 32px 0px rgba(0,0,0,0.06);
+        box-shadow: 15px 0px 32px 0px rgba(0,0,0,0.06);
+
+        &:hover {
+            box-shadow: none;
+        }
+
+    }
+
+}

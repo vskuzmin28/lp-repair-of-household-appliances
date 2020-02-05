@@ -1,0 +1,110 @@
+mixin services(data)
+    - data = data || {};
+    section#services.services
+        .container
+            .row
+                .col-lg-12
+                    h3.services__title Услуги и цены сервисного центра CompName
+            .row.services__table
+                .col-lg-12
+                    .row.services__table-header
+                        .col-lg-8.col-6
+                            p Поломка
+                        .col-lg-2.col-3
+                            p Стоимость
+                        .col-lg-2.col-3.services__hide
+                            p.text-right Заказ
+
+                    // field
+
+                    .row.services__table-field
+                        .col-lg-8.col-6
+                            p Наименование услуги
+                        .col-lg-2.col-3
+                            p от 450 Руб.
+                        .col-lg-2.col-3.services__hide
+                            a.services__buy.linkCall.link-repair-one(href="#" title="") Заказать
+
+                    .row.services__table-field
+                        .col-lg-8.col-6
+                            p Наименование услуги
+                        .col-lg-2.col-3
+                            p от 450 Руб.
+                        .col-lg-2.col-3.services__hide
+                            a.services__buy.linkCall.link-repair-two(href="#" title="") Заказать
+
+                    .row.services__table-field
+                        .col-lg-8.col-6
+                            p Наименование услуги
+                        .col-lg-2.col-3
+                            p от 450 Руб.
+                        .col-lg-2.col-3.services__hide
+                            a.services__buy.linkCall.link-repair-three(href="#" title="") Заказать
+
+                    .row.services__table-field
+                        .col-lg-8.col-6
+                            p Наименование услуги
+                        .col-lg-2.col-3
+                            p от 450 Руб.
+                        .col-lg-2.col-3.services__hide
+                            a.services__buy.linkCall.link-repair-one(href="#" title="") Заказать
+
+                    .row.services__table-field
+                        .col-lg-8.col-6
+                            p Наименование услуги
+                        .col-lg-2.col-3
+                            p от 450 Руб.
+                        .col-lg-2.col-3.services__hide
+                            a.services__buy.linkCall.link-repair-two(href="#" title="") Заказать
+
+                    .row.services__table-field
+                        .col-lg-8.col-6
+                            p Наименование услуги
+                        .col-lg-2.col-3
+                            p от 450 Руб.
+                        .col-lg-2.col-3.services__hide
+                            a.services__buy.linkCall.link-repair-three(href="#" title="") Заказать
+
+                    .row.services__table-field.not-show
+                        .col-lg-8.col-6
+                            p Наименование услуги
+                        .col-lg-2.col-3
+                            p от 450 Руб.
+                        .col-lg-2.col-3.services__hide
+                            a.services__buy.linkCall.link-repair-one(href="#" title="") Заказать
+
+                    .row.services__table-field.not-show
+                        .col-lg-8.col-6
+                            p Наименование услуги
+                        .col-lg-2.col-3
+                            p от 450 Руб.
+                        .col-lg-2.col-3.services__hide
+                            a.services__buy.linkCall.link-repair-two(href="#" title="") Заказать
+
+                    .row.services__table-field.not-show
+                        .col-lg-8.col-6
+                            p Наименование услуги
+                        .col-lg-2.col-3
+                            p от 450 Руб.
+                        .col-lg-2.col-3.services__hide
+                            a.services__buy.linkCall.link-repair-three(href="#" title="") Заказать
+
+                    .row.services__table-field.not-show
+                        .col-lg-8.col-6
+                            p Наименование услуги
+                        .col-lg-2.col-3
+                            p от 450 Руб.
+                        .col-lg-2.col-3.services__hide
+                            a.services__buy.linkCall.link-repair-one(href="#" title="") Заказать
+            .row
+                .col-lg-12.col-12
+                    a.button.button_orange.button_shadow.services__button.linkCall.services__button-mobile(href="#" title="") Заказать
+            .row
+                .col-lg-4.d-flex.align-items-center
+                    a.services__link.show-btn(href="#" title="")
+                        svg.services__link-icon
+                            use(xlink:href="../img/sprite/sprite.svg#eye")
+                        .services__link-desc Увидеть все возможные поломки
+                .col-lg-4
+                    a.services__buy-popup.button.button_orange.button_shadow.services__button.linkCall.link-services(href="#" title="") Оставить заявку
+                .col-lg-4

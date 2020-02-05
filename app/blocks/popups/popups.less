@@ -1,0 +1,110 @@
+// popup
+
+.popup {
+    position: relative;
+    width: 556px;
+    height: 318px;
+    background: @white;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    @media screen and (max-width: 700px) {
+        width: 360px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 700px) {
+        width: 300px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    &__link {
+        width: 195px;
+        border-radius: 4px;
+        height: 38px;
+    }
+
+    &_long {
+        max-width: 660px;
+        height: 500px;
+        overflow: auto;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 35px;
+        font-size: 22px;
+        font-family: 'Futura PT Book';
+        text-align: center;
+        color: @black;
+
+        @media screen and (max-width: 320px) {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px 5%;
+            box-sizing: border-box;
+        }
+    
+        @media screen and (max-width: 700px) {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px 5%;
+            box-sizing: border-box;
+        }
+
+    }
+
+    &__close {
+        top: 16px;
+        right: 16px;
+        position: absolute;
+        display: block;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    &__icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    &__content {
+        font-size: 16px;
+        font-family: 'lator', sans-serif;
+        line-height: 20px;
+        color: @black;
+    }
+
+    &__form {
+        flex-direction: column;
+        justify-content: center;
+        width: 270px;
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            border-radius: 4px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .form__input {
+            width: 100%;
+        }
+
+    }
+
+}

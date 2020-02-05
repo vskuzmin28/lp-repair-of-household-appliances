@@ -1,0 +1,33 @@
+mixin specialists(data)
+    - data = data || {};
+    section#masters.specialists
+        .specialists__container.container
+            .row
+                .col-lg-12
+                    h3.specialists__title Наши специалисты
+                    p.specialists__desc Мы проводим качественный отбор мастеров. <br/> Каждый из них имеет опыт более 5 лет в сфере ремонта крупной бытовой техники
+            .row.d-flex.justify-content-between.specialists__body
+                .col-lg-3.col-md-4.specialists__block
+                    .specialists__block-preview
+                        .specialists__block-mask
+                            .specialists__block-content
+                                p Иван Иванов
+                                span работает с 2013 г
+                        img(src="../img/specialists/specialist-1.png" alt="@@")
+                    a.button.button_orange.button_shadow.specialists__button.linkCall.link-master-one(href="#" title="") Вызвать мастера
+                .col-lg-3.col-md-4.specialists__block
+                    .specialists__block-preview
+                        .specialists__block-mask
+                            .specialists__block-content
+                                p Иван Иванов
+                                span работает с 2013 г
+                        img(src="../img/specialists/specialist-2.png" alt="@@")
+                    a.button.button_orange.button_shadow.specialists__button.linkCall.link-master-two(href="#" title="") Вызвать мастера
+                .col-lg-3.col-md-4.specialists__block
+                    .specialists__block-preview
+                        .specialists__block-mask
+                            .specialists__block-content
+                                p Иван Иванов
+                                span работает с 2013 г
+                        img(src="../img/specialists/specialist-3.png" alt="@@")
+                    a.button.button_orange.button_shadow.specialists__button.linkCall.link-master-three(href="#" title="") Вызвать мастера

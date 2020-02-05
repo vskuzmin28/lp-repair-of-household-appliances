@@ -1,0 +1,71 @@
+mixin repair(data)
+    - data = data || {};
+    section.repair(class = data.class role = data.role)
+        .repair__container.container
+            .row
+                .col-lg-10.repair__field
+                   
+                    .row
+
+                        .col-lg-12.repair__main-block
+
+                            h3.repair__title Профессионально ремонтируем бытовую технику с 2009 года
+                            p.repair__desc Осуществляем широкий спектр услуг
+
+                            .row.repair__services
+                                .col-lg-4.col-6
+                                    a.repair__services-item(href="#services" title="")
+                                        .repair__services-mask
+                                            .repair__services-content
+                                                p Ремонт холодильников
+                                                span Подробнее
+                                        img(src="../img/repairs/repair-1.jpg" alt="@@")
+                                .col-lg-4.col-6
+                                    a.repair__services-item(href="#services" title="")
+                                        .repair__services-mask
+                                            .repair__services-content
+                                                p Ремонт стиральных машин
+                                                span Подробнее
+                                        img(src="../img/repairs/repair-2.jpg" alt="@@")
+                                .col-lg-4.col-6
+                                    a.repair__services-item(href="#services" title="")
+                                        .repair__services-mask
+                                            .repair__services-content
+                                                p Ремонт посудомоечных машин
+                                                span Подробнее
+                                        img(src="../img/repairs/repair-3.jpg" alt="@@")
+
+                        .col-lg-12.repair__last-block
+
+                            .repair__order(data-wow-delay="1.25s")
+                                .repair__order-block
+                                    .row.d-flex.justify-content-end
+                                        .col-lg-6.col-md-12
+                                            .repair__order-box
+                                                h4.repair__order-title Скидка 25% на ремонт стиральной машины
+                                                p.repair__order-desc При заказе с сайта до конца текущего месяца
+
+                                                p.repair__order-desc_orange Оставьте заявку, чтобы успеть сэкономить на ремонте
+
+                                                .repair__form
+                                                    form.form(action="/" method="post")
+                                                        input.form__input(name="phone" type="text" placeholder="Ваш телефон" required)
+                                                        input(type="hidden" name="sale" value="Скидка 25%")
+                                                        input.button.button_orange.button_shadow.form__button(type="submit" value="CЭКОНОМИТЬ")
+                                                    p.repair__form-desc Нажимая на кнопку “Сэкономить” - вы даете согласие на обработку персональных данных
+
+                                        .col-lg-5.col-md-12
+                                            img.repair__master(src="../img/master.png" alt="@@")
+
+                .col-lg-2
+                    .repair__slider
+                        .swiper-wrapper
+                            .swiper-slide
+                                img(src="../img/repair.png" alt="@@")   
+                            .swiper-slide
+                                img(src="../img/repair.png" alt="@@")
+                            .swiper-slide
+                                img(src="../img/repair.png" alt="@@")
+                            .swiper-slide
+                               img(src="../img/repair.png" alt="@@")
+                        .swiper-pagination
