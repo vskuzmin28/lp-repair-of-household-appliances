@@ -1,5 +1,7 @@
 # lp-repair-of-household-appliances
 
+_Project for personal account CPA network_
+
 **for run project:**
 
 node: v8.16.0
