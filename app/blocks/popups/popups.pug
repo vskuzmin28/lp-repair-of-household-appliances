@@ -15,7 +15,7 @@ mixin popup(data)
 mixin popupThanks(data)
     - data = data || {};
     section.popup.popupThanks(class = data.class, role = data.role)
-        h2.popup__title Спасибо! <br/> Мы перезвоним Вам за 5 минут!
+        h2.popup__title Спасибо! <br/> В ближайшее время свяжемся с Вами!
         a.popup__close(href="#" title="")
             svg.popup__icon
                 use(xlink:href="../img/sprite/sprite.svg#close")
