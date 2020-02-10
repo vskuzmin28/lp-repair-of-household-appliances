@@ -381,7 +381,7 @@ $(function() {
 
 });
 
-let d = new Date(); // 30 января 2014
+let d = new Date();
 
 function formatDate(date) {
 
