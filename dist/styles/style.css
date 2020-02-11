@@ -617,14 +617,21 @@ body *::selection {
 }
 .header__button-call {
   position: absolute;
-  margin: 48px 0 0 -78px;
+  margin: 47px 0 0 -164px;
   width: 195px;
   font-size: 18px;
   font-family: 'Futura PT Demi';
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  color: #ff6649;
+  color: #878787;
+}
+.header__button-call .icon {
+  margin-top: -2px;
+  margin-right: 10px;
+  fill: #000;
+  width: 16px;
+  height: 14px;
 }
 @media screen and (max-width: 991px) {
   .header__button-call {
@@ -662,7 +669,17 @@ body *::selection {
   height: 52px;
 }
 .header_float .header__button-call {
-  display: none;
+  right: 0;
+  top: 0;
+  margin: 16px 180px 0 0;
+  color: #000;
+}
+.header_float .header__button-call .icon {
+  margin-top: -2px;
+  margin-right: 10px;
+  fill: #d5d5d5;
+  width: 16px;
+  height: 14px;
 }
 @media screen and (max-width: 991px) {
   .header_float {
@@ -719,7 +736,7 @@ body *::selection {
 }
 .header__logo {
   margin-top: 31px;
-  margin-left: -55px;
+  margin-left: -16px;
 }
 @media screen and (max-width: 475px) {
   .header__logo {
@@ -763,10 +780,10 @@ body *::selection {
 }
 .header__button {
   position: absolute;
-  right: -92px;
-  margin-top: 41px;
+  right: -12px;
+  margin-top: 31px;
   width: 195px;
-  height: 34px !important;
+  height: 51px !important;
   background: #ffd10a !important;
   color: #000 !important;
 }
@@ -820,7 +837,8 @@ body *::selection {
   }
 }
 .header__nav-item {
-  margin-right: 30px;
+  margin-right: 10px;
+  padding-right: 6px;
   height: 118px;
 }
 @media screen and (min-width: 991px) and (max-width: 1200px) {
@@ -873,41 +891,6 @@ body *::selection {
   .header__nav-item a,
   .header__nav-item a:hover {
     font-size: 9px;
-  }
-}
-.header__nav-item a:before,
-.header__nav-item a:hover:before {
-  visibility: visible;
-  top: 0px;
-  left: -34px;
-  position: absolute;
-  width: 34px;
-  height: 118px;
-  background: url('../img/nav-bef.png') no-repeat;
-  content: "";
-}
-@media screen and (max-width: 991px) {
-  .header__nav-item a:before,
-  .header__nav-item a:hover:before {
-    display: none;
-  }
-}
-.header__nav-item a:after,
-.header__nav-item a:hover:after {
-  z-index: -1;
-  visibility: visible;
-  top: 0px;
-  right: -34px;
-  position: absolute;
-  width: 34px;
-  height: 118px;
-  background: url('../img/nav-af.png') no-repeat right;
-  content: "";
-}
-@media screen and (max-width: 991px) {
-  .header__nav-item a:after,
-  .header__nav-item a:hover:after {
-    display: none;
   }
 }
 .header__nav-item a {
@@ -994,7 +977,7 @@ body *::selection {
   margin-top: 118px;
   position: relative;
   background: #eff4fb;
-  height: 783px;
+  height: 865px;
 }
 @media screen and (max-width: 991px) {
   .main {
@@ -1004,7 +987,7 @@ body *::selection {
 }
 .main__title {
   z-index: 12;
-  margin-top: 60px;
+  margin-top: 112px;
   margin-left: -4px;
   position: absolute;
   width: 230%;
@@ -1027,7 +1010,7 @@ body *::selection {
 .main__desc {
   position: absolute;
   margin-left: -4px;
-  margin-top: 186px;
+  margin-top: 236px;
   width: 120%;
   font-size: 19px;
   font-family: 'Futura PT';
@@ -1045,7 +1028,7 @@ body *::selection {
 .main__list {
   position: relative;
   margin: 0;
-  margin-top: 270px;
+  margin-top: 324px;
   margin-left: -4px;
   padding: 0;
   list-style: none;
@@ -1056,7 +1039,7 @@ body *::selection {
   }
 }
 .main__list-item {
-  margin-bottom: 46px;
+  margin-bottom: 28px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1085,7 +1068,8 @@ body *::selection {
 .main__kitchen {
   margin-left: 41px;
   position: absolute;
-  width: 498px;
+  width: 682px;
+  padding-bottom: 82px;
   background: #fff;
 }
 @media screen and (max-width: 991px) {
@@ -1098,14 +1082,14 @@ body *::selection {
 }
 .main__kitchen-icebox {
   z-index: 10;
-  bottom: 69px;
-  right: -229px;
+  bottom: 100px;
+  right: 35px;
   position: absolute;
 }
 .main__kitchen-master {
   z-index: 9;
-  bottom: 97px;
-  right: -74px;
+  bottom: 144px;
+  right: 202px;
   position: absolute;
 }
 .main__order {
@@ -1115,8 +1099,8 @@ body *::selection {
 .main__order-block {
   position: absolute;
   padding-top: 40px;
-  padding-bottom: 00px;
-  bottom: -273px;
+  padding-bottom: 50px;
+  bottom: -359px;
   right: -71px;
   width: 1000%;
   z-index: 30;

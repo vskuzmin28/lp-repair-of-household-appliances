@@ -21,14 +21,22 @@
     
     &__button-call {
         position: absolute;
-        margin: 48px 0 0 -78px;
+        margin: 47px 0 0 -164px;
         width: 195px;
         font-size: 18px;
         font-family: 'Futura PT Demi';
         font-weight: 600;
         text-align: center;
         text-decoration: none;
-        color: @orange;
+        color: #878787;
+
+        .icon {
+            margin-top: -2px;
+            margin-right: 10px;
+            fill: @black;
+            width: 16px;
+            height: 14px;
+        }
 
         @media screen and (max-width: 991px) {
             display: none;
@@ -68,7 +76,19 @@
         height: 52px;
 
         .header__button-call {
-            display: none;
+            right: 0;
+            top: 0;
+            margin: 16px 180px 0 0;
+            color: @black;
+
+            .icon {
+                margin-top: -2px;
+                margin-right: 10px;
+                fill: #d5d5d5;
+                width: 16px;
+                height: 14px;
+            }
+
         }
 
         @media screen and (max-width: 991px) {
@@ -135,7 +155,7 @@
 
     &__logo {
         margin-top: 31px;
-        margin-left: -55px;
+        margin-left: -16px;
 
         @media screen and (max-width: 475px) {
             width: 200px;
@@ -178,10 +198,10 @@
 
     &__button {
         position: absolute;
-        right: -92px;
-        margin-top: 41px;
+        right: -12px;
+        margin-top: 31px;
         width: 195px;
-        height: 34px !important;
+        height: 51px !important;
         background: #ffd10a !important;
         color: @black !important;
 
@@ -222,7 +242,8 @@
         }
 
         &-item {
-            margin-right: 30px;
+            margin-right: 10px;
+            padding-right: 6px;
             height: 118px;
             
             @media screen and (min-width: 991px) and (max-width: 1200px) {
@@ -260,38 +281,38 @@
                     font-size: 9px;
                 }
 
-                &:before {
-                    visibility: visible;
-                    top: 0px;
-                    left: -34px;
-                    position: absolute;
-                    width: 34px;
-                    height: 118px;
-                    background: url('../img/nav-bef.png') no-repeat;
-                    content: "";
+                // &:before {
+                //     visibility: visible;
+                //     top: 0px;
+                //     left: -34px;
+                //     position: absolute;
+                //     width: 34px;
+                //     height: 118px;
+                //     background: url('../img/nav-bef.png') no-repeat;
+                //     content: "";
 
-                    @media screen and (max-width: 991px) {
-                        display: none;
-                    }
+                //     @media screen and (max-width: 991px) {
+                //         display: none;
+                //     }
 
-                }
+                // }
 
-                &:after {
-                    z-index: -1;
-                    visibility: visible;
-                    top: 0px;
-                    right: -34px;
-                    position: absolute;
-                    width: 34px;
-                    height: 118px;
-                    background: url('../img/nav-af.png') no-repeat right;
-                    content: "";
+                // &:after {
+                //     z-index: -1;
+                //     visibility: visible;
+                //     top: 0px;
+                //     right: -34px;
+                //     position: absolute;
+                //     width: 34px;
+                //     height: 118px;
+                //     background: url('../img/nav-af.png') no-repeat right;
+                //     content: "";
 
-                    @media screen and (max-width: 991px) {
-                        display: none;
-                    }
+                //     @media screen and (max-width: 991px) {
+                //         display: none;
+                //     }
 
-                }
+                // }
 
             }
 

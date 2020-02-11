@@ -217,7 +217,7 @@ gulp.task('clean-dist', function () {
 var svgSprite = require('gulp-svg-sprite');
 
 gulp.task('svgSprite', function () {
-    return gulp.src('app/../img/svg/*.svg') // svg files for sprite
+    return gulp.src('app/img/svg/*.svg') // svg files for sprite
         .pipe(svgSprite({
                 mode: {
                     stack: {
@@ -226,7 +226,7 @@ gulp.task('svgSprite', function () {
                 },
             }
         ))
-        .pipe(gulp.dest('app/../img/sprite/'));
+        .pipe(gulp.dest('app/img/sprite'));
 });
 
 // CSS MINIFY
